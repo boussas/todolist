@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.task p {
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  font-size: 25px;
+  width: 75%;
+  overflow: hidden;
+}
+
+.task button {
+  border-radius: 22px !important;
+  font-weight: bold;
+  appearance: button;
+  background-color: #1652f0;
+  border: 1px solid #1652f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.task button:disabled {
+  opacity: 0.5;
+}
+
+.task button:focus {
+  outline: 0;
+}
+
+.task button:hover {
+  background-color: #0a46e4;
+  border-color: #0a46e4;
+}
+
+.task button:active {
+  background-color: #0039d7;
+  border-color: #0039d7;
+}
+.dashed {
+  text-decoration: line-through;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: 800;
+  padding: 15px 10px 10px;
+}
+
+header {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header input {
+  font-family: "Roboto", sans-serif;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  padding: 10px;
+  width: 400px;
+  height: 45px;
+}
+/* CSS */
+.button-42 {
+  border-radius: 17px !important;
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 45px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100px;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow 0.2s;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.button-42:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+header input:focus {
+  outline: none;
+}
+header button {
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 90%;
+  }
+  header input {
+    height: 35px;
+    line-height: normal;
+    font-size: 1rem;
+    width: fit-content !important;
+  }
+  .task p {
+    font-size: 1rem;
+  }
+  .tasks {
+    padding: 14px;
+  }
+  .task button {
+    font-size: 14px !important;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: 90%;
+  }
+}
